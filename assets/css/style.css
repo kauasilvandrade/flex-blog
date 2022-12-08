@@ -254,6 +254,10 @@ img {
     transform: scale(1);
 }
 
+.preco-item:hover ul li::after {
+    transform: scale(1);
+}
+
 .preco-item h2 {
     font-size: 3em;
     color: #a4a4a4;
@@ -314,7 +318,8 @@ img {
     height: 6px;
     width: 6px;
     border-radius: 50%;
-    background-color: black;    
+    background-color: black;
+    transform: scale(0);    
 }
 
 .preco-item a {
@@ -424,6 +429,7 @@ img {
     margin: 0 0.6rem;
     align-self: center;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .newsletter-form input {
@@ -440,7 +446,7 @@ img {
 }
 
 .newsletter-form button {
-    flex: 1 1 16.5rem;
+    flex: 1 1 4.5rem;
     font-family: 'Nunito', Helvetica, Arial, sans-serif;
     font-size: 2.25em;
     font-weight: bold;
